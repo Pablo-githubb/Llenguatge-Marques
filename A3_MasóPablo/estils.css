@@ -1,0 +1,155 @@
+.costext {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    border: none;
+    background-position: center;
+    background-color: #dfd8d8;
+    font-family: sans-serif;
+    color: black;
+    font-weight: 400;
+  }
+#h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #1d4979;
+    font-weight: bold;
+}
+#h3{
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.logo{
+    text-align: center;
+    scale: 2000px;
+    background-color: #535353;
+}
+#facebook{
+scale: 10px;
+}
+#twitter{
+scale: 10px;
+}
+.links{
+    background-color: #535353;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+}
+.links ul {
+    text-align: center;
+}
+.links ul li {
+    display: inline;
+    margin-right: 15px;
+}
+.links ul li a{
+    text-decoration: none;
+    color: orange;
+    padding: 10px 5px;
+}
+.links ul li a:hover {
+    color: black;
+}
+#p{
+    font-weight: bold;
+}
+.img1{
+    position: relative;
+    text-align: center;
+    scale: 90%;
+}
+.footer{
+    text-align: center;
+    background-color:darkorchid;
+    width: 100%;
+}
+#h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    background-color: yellow;
+}
+.wiki{
+    color: orange;
+}
+.wiki a:hover{
+    color:black;
+}
+.arcs{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    padding: auto;
+}
+
+#tit {
+    position: relative; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: rgb(31, 124, 124);
+    font-weight: bold;
+}
+
+
+#tit::before {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 30px; 
+    height: 20px;
+    background-image: url('img/icono-cine.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+
+.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.fotocentrada img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.fotocentrada2 img{
+    width: 120px;
+    height: 200px;
+}
+#subrallat{
+    background-color:#535353;
+    text-align: center;
+    width: 190px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#subrallat{
+    color: orange;
+}
+#subrallat a:hover{
+    color: white;
+    
+}
+#subrallat2{
+    color: orange;
+}
+#subrallat2 a:hover{
+    color: white;
+    
+}
+.personatges{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    text-align: justify;
+}
