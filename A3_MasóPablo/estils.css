@@ -90,7 +90,8 @@ html{
 }
 
 #tit {
-    position: relative; 
+    position: relative;
+    padding-left: 24px; 
     font-family: 'Times New Roman', Times, serif;
     font-size: 19px;
     color: rgb(31, 124, 124);
