@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.index {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-image: url('img/fondoindex.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header */
+.header {
+    background-color: rgb(10, 161, 10); 
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid rgb(100, 100, 100);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoi {
+    width: 150px; 
+    height: 90px;
+    border-radius: 8px;
+    padding-left: 50px;
+}
+
+.links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links a:hover {
+    color: black;
+}
+
+/* Sección principal (Hero) */
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #4a8031;
+    text-align: left;
+    padding-top: 230px;
+    padding-left: 100px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    color: #509630;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 35px;
+    color: #4b9b25;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #21a121;
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    border-top: 4px solid rgb(100, 100, 100);
+    font-size: 16px;
+    text-align: left;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.creativeicon {
+    width: 90px;
+    height: 35px;
+}
+
+/* Precios */
+.precios {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(227, 226, 226);
+    text-align: center;
+    margin-top: 108px; 
+    padding: 20px;
+}
+
+.titprecios {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+table {
+    width: 50%;
+    background: #FFFFFF;
+    border: 2px solid white;
+    margin: 40px auto;
+    border-collapse: separate; 
+    border-radius: 15px; 
+    overflow: hidden; 
+}
+
+td, th {
+    border-bottom: 3px solid #fff;
+    padding: 10px;
+    text-align: center;
+}
+#ind{
+    background-color: grey;
+}
+
+#negre {
+    background: #1c2b46;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.iconos .icon-img {
+    width: 30px;
+    height: 30px;
+    margin: 2px 0;
+}
+/* Reserva*/
+.titformularios {
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.formulari {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(204, 204, 204);
+    margin-top: 180px;
+    margin-left: 150px;
+    margin-bottom: 80px;
+    padding: 30px;
+    width: 85%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}

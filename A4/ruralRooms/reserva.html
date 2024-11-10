@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rural Rooms">
+    <title>Rural Rooms</title>
+</head>
+<body> 
+
+    <!-- Encabezado con logo y menú de navegación -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/RRLogo.png" alt="Rural Rooms Logo" class="logoi">
+            </a>
+        </div>
+        <nav class="links">
+            <a href="index.html">Inicio</a>
+            <a href="precios.html">Precios</a>
+            <a href="reserva.html">Reserva</a>
+        </nav>
+    </header>
+
+    <!-- Sección principal con la imagen de fondo y texto -->
+    <div class="formulari">
+    <main>
+        <p class="titprecios">Reserve su Habitación en Rural Rooms</p>
+        <br>
+        <br>
+            <form action="/enviar" method="POST">
+
+                <!-- Datos Personales -->
+                <fieldset>
+                    <legend>Datos Personales</legend>
+            
+                    <!-- Tratamiento -->
+                    <label for="tratamiento">Tratamiento:</label>
+                    <select id="tratamiento" name="tratamiento">
+                        <option value="Sr">Sr</option>
+                        <option value="Sra">Sra</option>
+                        <option value="Srta">Srta</option>
+                    </select><br>
+            
+                    <!-- Nombre -->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br>
+            
+                    <!-- Apellidos -->
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required><br>
+            
+                    <!-- Teléfono -->
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required><br>
+            
+                    <!-- Correo electrónico -->
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required><br>
+            
+                    <!-- Confirmación de correo electrónico -->
+                    <label for="confirmar-email">Confirmar correo electrónico:</label>
+                    <input type="email" id="confirmar-email" name="confirmar-email" required><br>
+            
+                    <!-- Contraseña -->
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required><br>
+                </fieldset>
+            
+                <!-- Datos de la Reserva -->
+                <fieldset>
+                    <legend>Datos de la Reserva</legend>
+            
+                    <!-- Tipo de habitación -->
+                    <label for="tipo-habitacion">Tipo de habitación:</label>
+                    <select id="tipo-habitacion" name="tipo-habitacion">
+                        <option value="individual">Habitación individual</option>
+                        <option value="doble">Habitación doble</option>
+                        <option value="doble-superior">Habitación doble superior</option>
+                        <option value="triple">Habitación triple</option>
+                    </select><br>
+            
+                    <!-- Número de personas -->
+                    <label for="personas">Número de personas:</label>
+                    <input type="number" id="personas" name="personas" min="1" required><br>
+            
+                    <!-- Fecha de entrada -->
+                    <label for="fecha-entrada">Fecha de entrada:</label>
+                    <input type="date" id="fecha-entrada" name="fecha-entrada" required><br>
+            
+                    <!-- Fecha de salida -->
+                    <label for="fecha-salida">Fecha de salida:</label>
+                    <input type="date" id="fecha-salida" name="fecha-salida" required><br>
+            
+                    <!-- Peticiones especiales -->
+                    <label for="peticiones">Peticiones especiales (no garantizadas):</label>
+                    <textarea id="peticiones" name="peticiones" rows="3" placeholder="Especifique aquí si necesita algún servicio especial"></textarea><br>
+                </fieldset>
+            
+                <!-- Datos Adicionales -->
+                <fieldset>
+                    <legend>Datos Adicionales</legend>
+            
+                    <!-- Reserva de parking cubierto -->
+                    <label>
+                        <input type="checkbox" name="parking" value="sí">
+                        Deseo reservar plaza de parking cubierto (8€/noche). El hotel dispone de parking exterior gratuito.
+                    </label><br>
+            
+                    <!-- Hora de llegada -->
+                    <label for="hora-llegada">Hora prevista de llegada:</label>
+                    <input type="time" id="hora-llegada" name="hora-llegada"><br>
+                </fieldset>
+            
+                <!-- Botón de envío -->
+                <button type="submit">Enviar Reserva</button>
+            </form>
+    </main>
+    </div>
+
+    <!-- Pie de página con créditos -->
+    <footer class="footer">
+        <p>Actividad realizada por <b>Pablo Masó Carceller</b></p>
+        <p>Fotografías de la portada <a href="https://unsplash.com" target="_blank">Unsplash</a> 
+            <img src="img/creative-commons.png" alt="Creative Commons" class="creativeicon">
+        </p>
+    </footer>
+
+</body>
+</html>
