@@ -108,12 +108,18 @@
                         <input type="checkbox" name="parking" value="sí">
                         Deseo reservar plaza de parking cubierto (8€/noche). El hotel dispone de parking exterior gratuito.
                     </label><br>
-            
+
                     <!-- Hora de llegada -->
                     <label for="hora-llegada">Hora prevista de llegada:</label>
                     <input type="time" id="hora-llegada" name="hora-llegada"><br>
+                   
+                    <label for="tratamiento">Quieres agregar un almuerzo para los próximos días? a un precio de 5€/día:</label>
+                    <select id="tratamiento" name="tratamiento">
+                        <option value="Sr">Sí</option>
+                        <option value="Sra">No</option>
+                    </select><br>
                 </fieldset>
-            
+                
                 <!-- Botón de envío -->
                 <button type="submit">Enviar Reserva</button>
             </form>
