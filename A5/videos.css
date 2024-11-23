@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #2b2c2e; /* Fondo general */
+}
+
+#fondo {
+    background-color: #2b2c2e; /* Aseguramos el fondo específico */
+}
+
+header {
+    background-color: #1f1f1f; /* Fondo del header */
+    padding: 1rem;
+}
+
+.brandlogo img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Sección principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Sección de videos */
+.videos-section {
+    background-color: #292a2d; /* Fondo de cada sección */
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.videos-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #e56d09; /* Color del título */
+    border-bottom: 2px solid #e56d09;
+    display: inline-block;
+}
+
+.videos-section h2 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+    color: #ffffff; /* Color del subtítulo */
+}
+
+article {
+    margin-bottom: 2rem;
+    background-color: #2f3033; /* Fondo de cada artículo */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    border: 3px solid #e56d09;
+    border-radius: 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .brandlogo img {
+        width: 150px;
+    }
+
+    .videos-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .videos-section h2 {
+        font-size: 1.25rem;
+    }
+}
