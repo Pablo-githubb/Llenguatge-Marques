@@ -1,0 +1,66 @@
+{
+    "renfe_MasóPablo": {
+      "origen": "Tortosa",
+      "desti": "Tarragona",
+      "data": "06/11/2023",
+      "apartir": "8:00",
+      "trens": [
+        {
+          "horaSortida": "09:23",
+          "horaArribada": "10:47",
+          "durada": "01:24",
+          "tipus": "R",
+          "preu": "8.05",
+          "estacio-trenaccesible": "No"
+        },
+        {
+          "horaSortida": "11:32",
+          "horaArribada": "12:50",
+          "durada": "01:18",
+          "tipus": "RE",
+          "preu": "8.05",
+          "estacio-trenaccesible": "Si"
+        },
+        {
+          "horaSortida": "13:51",
+          "horaArribada": "15:00",
+          "durada": "01:09",
+          "tipus": "RE",
+          "preu": "8.05",
+          "estacio-trenaccesible": "Si"
+        },
+        {
+          "horaSortida": "15:37",
+          "horaArribada": "16:56",
+          "durada": "01:19",
+          "tipus": "RE",
+          "preu": "8.05",
+          "estacio-trenaccesible": "No"
+        },
+        {
+          "horaSortida": "16:32",
+          "horaArribada": "17:51",
+          "durada": "01:19",
+          "tipus": "RE",
+          "preu": "8.05",
+          "estacio-trenaccesible": "Si"
+        },
+        {
+          "horaSortida": "18:30",
+          "horaArribada": " 19:51",
+          "durada": "01:21",
+          "tipus": "RE",
+          "preu": "8.05",
+          "estacio-trenaccesible": "Si"
+        },
+        {
+          "horaSortida": "20:55",
+          "horaArribada": "22:16",
+          "durada": "01:21",
+          "tipus": "RE",
+          "preu": "8.05",
+          "estacio-trenaccesible": "No"
+        }
+      ]
+    }
+}
