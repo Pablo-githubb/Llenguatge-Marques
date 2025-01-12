@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pressupost>
+    <client>
+        <nom>Client 1</nom>
+        <email>client1@example.com</email>
+        <nom>Client 2</nom>
+        <email>client2@example.com</email>
+    </client>
+    <comanda>
+        <component id="placa_base">
+            <nom>ASUS ROG Strix B550-F</nom>
+            <preu>150.00</preu>
+            <nom>MSI B450 TOMAHAWK MAX</nom>
+            <preu>120.00</preu>
+        </component>
+        <component id="processador">
+            <nom>AMD Ryzen 5 5600X</nom>
+            <preu>250.00</preu>
+            <nom>Intel Core i5-10400F</nom>
+            <preu>200.00</preu>
+        </component>
+        <component id="memoria_ram" quantitat="2">
+            <nom>Corsair Vengeance LPX 16GB (2 x 8GB) DDR4</nom>
+            <preu>80.00</preu>
+            <nom>G.Skill Ripjaws V 16GB (2 x 8GB) DDR4</nom>
+            <preu>75.00</preu>
+        </component>
+        <component id="disc_dur">
+            <nom>Samsung 970 EVO Plus 1TB NVMe</nom>
+            <preu>120.00</preu>
+            <nom>Western Digital Blue 1TB HDD</nom>
+            <preu>50.00</preu>
+        </component>
+        <component id="targeta_grafica">
+            <nom>NVIDIA GeForce GTX 1660 Super</nom>
+            <preu>300.00</preu>
+            <nom>AMD Radeon RX 6600</nom>
+            <preu>350.00</preu>
+        </component>
+        <component id="targeta_so">
+            <nom>Creative Sound Blaster Audigy SE</nom>
+            <preu>50.00</preu>
+            <nom>ASUS Xonar SE</nom>
+            <preu>40.00</preu>
+        </component>
+    </comanda>
+    <total>950.00</total>
+    <total>835.00</total>
+</pressupost>
