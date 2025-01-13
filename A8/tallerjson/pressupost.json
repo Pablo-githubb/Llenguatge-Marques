@@ -1,0 +1,86 @@
+{
+    "pressupost": {
+        "clients": {
+            "client": [
+                {
+                    "nom": "Client 1",
+                    "email": "client1@example.com"
+                },
+                {
+                    "nom": "Client 2",
+                    "email": "client2@example.com"
+                }
+            ]
+        },
+        "comanda": {
+            "component": [
+                {
+                    "id": "placa_base",
+                    "nom": "ASUS ROG Strix B550-F",
+                    "preu": 150
+                },
+                {
+                    "id": "placa_base",
+                    "nom": "MSI B450 TOMAHAWK MAX",
+                    "preu": 120
+                },
+                {
+                    "id": "processador",
+                    "nom": "AMD Ryzen 5 5600X",
+                    "preu": 250
+                },
+                {
+                    "id": "processador",
+                    "nom": "Intel Core i5-10400F",
+                    "preu": 200
+                },
+                {
+                    "id": "memoria_ram",
+                    "quantitat": 2,
+                    "nom": "Corsair Vengeance LPX 16GB (2 x 8GB) DDR4",
+                    "preu": 80
+                },
+                {
+                    "id": "memoria_ram",
+                    "quantitat": 2,
+                    "nom": "G.Skill Ripjaws V 16GB (2 x 8GB) DDR4",
+                    "preu": 75
+                },
+                {
+                    "id": "disc_dur",
+                    "nom": "Samsung 970 EVO Plus 1TB NVMe",
+                    "preu": 120
+                },
+                {
+                    "id": "disc_dur",
+                    "nom": "Western Digital Blue 1TB HDD",
+                    "preu": 50
+                },
+                {
+                    "id": "targeta_grafica",
+                    "nom": "NVIDIA GeForce GTX 1660 Super",
+                    "preu": 300
+                },
+                {
+                    "id": "targeta_grafica",
+                    "nom": "AMD Radeon RX 6600",
+                    "preu": 350
+                },
+                {
+                    "id": "targeta_so",
+                    "nom": "Creative Sound Blaster Audigy SE",
+                    "preu": 50
+                },
+                {
+                    "id": "targeta_so",
+                    "nom": "ASUS Xonar SE",
+                    "preu": 40
+                }
+            ]
+        },
+        "total": [
+            950,
+            835
+        ]
+    }
+}
