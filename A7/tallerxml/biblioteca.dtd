@@ -1,0 +1,21 @@
+<!ELEMENT biblioteca (editorial+)>
+<!ELEMENT editorial (raosocial, adreca, llibre+, telefon, contacte)>
+<!ELEMENT telefon (#PCDATA)>
+<!ELEMENT contacte (#PCDATA)>
+<!ELEMENT raosocial (#PCDATA)>
+<!ELEMENT llibre (titol, publicacio, autor, premis, argument)>
+<!ELEMENT titol (#PCDATA)>
+<!ELEMENT publicacio (#PCDATA)>
+<!ELEMENT premis (premi+)>
+<!ELEMENT premi (#PCDATA)>
+<!ELEMENT argument (#PCDATA)>
+<!ELEMENT autor (nom, cognom+, adreca)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT adreca (carrer, numero, codipostal, poblacio, pis)>
+<!ELEMENT carrer (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT codipostal (#PCDATA)>
+<!ELEMENT poblacio (#PCDATA)>
+<!ELEMENT pis (#PCDATA)>
+
