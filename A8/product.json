@@ -1,0 +1,18 @@
+{
+"productId": 1,
+"productName": "Martell marca ACME",
+"preu": 12.5,
+"tags": [
+"eina",
+"perill"
+],
+"dimensions": {
+"llarg": 7,
+"ample": 12,
+"alt": 18.5
+},
+"warehouseLocation": {
+"latitud": -78.75,
+"longitud": 20.4
+}
+}
