@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Plantilla inscripció",
+    "description": "Aquesta és la plantilla per validar la inscripció",
+    "properties": {
+        "nom-equip": {
+            "type": "string"
+        },
+        "jugadors": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 10,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "num-jugador": {
+                        "type": "integer"
+                    },
+                    "DNI": {
+                        "type": "string"
+                    },
+                    "nom": {
+                        "type": "string"
+                    },
+                    "cognom": {
+                        "type": "string"
+                    },
+                    "edat": {
+                        "type": "integer"
+                    },
+                    "ciutat": {
+                        "type": "string"
+                    },
+                    "adreça": {
+                        "type": "string"
+                    },
+                    "país": {
+                        "type": "string"
+                    },
+                    "telèfon": {
+                        "type": "integer"
+                    },
+                    "email": {
+                        "type": "string",
+                        "format": "email"
+                    }
+                },
+                "required": ["num-jugador", "DNI", "nom", "cognom", "ciutat", "email"],
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": ["nom-equip", "jugadors"],
+    "additionalProperties": false
+}
