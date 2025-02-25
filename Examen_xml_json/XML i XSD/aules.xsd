@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="institut">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nom_insti" type="xs:string"/>
+                <xs:element name="edifici" type="EdificiType" minOccurs="1" maxOccurs="4"/>
+            </xs:sequence>
+            <xs:attribute name="curs" type="xs:integer" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="EdificiType">
+        <xs:sequence>
+            <xs:element name="planta" type="PlantaType" minOccurs="1" maxOccurs="12"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PlantaType">
+        <xs:sequence>
+            <xs:element name="aula" type="AulaType" minOccurs="1" maxOccurs="10"/>
+        </xs:sequence>
+        <xs:attribute name="pis" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="AulaType">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="nom_aula" type="xs:string"/>
+                <xs:element name="num_aula" type="xs:integer" minOccurs="1" maxOccurs="999"/>
+            </xs:choice>
+            <xs:element name="grup" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="informatica" type="xs:string" minOccurs="0"/>
+            <xs:choice>
+                <xs:element name="projector" type="xs:string"/>
+                <xs:element name="pantalla" type="PantallaType"/>
+            </xs:choice>
+            <xs:element name="aforo" type="xs:integer" minOccurs="1" maxOccurs="100"/>
+            <xs:element name="radiadors" type="xs:integer" minOccurs="1" maxOccurs="100"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="PantallaType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Newline Lyra Q23"/>
+            <xs:enumeration value="Synetech Taurus"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

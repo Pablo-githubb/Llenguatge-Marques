@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE institut SYSTEM "aules.xsd">
+<institut curs="2024">
+	<nom_insti>Institut de l'Ebre</nom_insti>
+	<edifici>
+		<planta pis="0">
+			<aula>
+				<nom_aula>Sala Mestral</nom_aula>
+				<projector>EPSON</projector>
+				<aforament>50</aforament> 
+				<radiadors>4</radiadors>
+			</aula>
+		</planta>
+		<planta pis="2">
+			<aula>
+				<num_aula>202</num_aula>
+				<grup>SMX1A</grup>
+				<grup>SMX2A</grup>
+				<informatica/>
+				<projector>EPSON</projector>
+				<aforo>18</aforo>
+			</aula>
+			<aula>
+				<nom_aula>A20.3</nom_aula>
+				<grup>ASIX1A</grup>
+				<grup>ASIX1B</grup>
+				<grup>ASIX2</grup>
+				<informatica/>
+				<pantalla>Newline Lyra Q23</pantalla>
+				<radiadors>2</radiadors>
+				<aforo>20</aforo>
+			</aula>
+		</planta>
+	</edifici>
+</institut>

@@ -1,0 +1,15 @@
+<!ELEMENT institut (nom_insti, edifici+)>
+<!ATTLIST institut curs CDATA #REQUIRED>
+<!ELEMENT nom_insti (#PCDATA)>
+<!ELEMENT edifici (planta+)>
+<!ELEMENT planta (aula+)>
+<!ATTLIST planta pis CDATA #REQUIRED>
+<!ELEMENT aula ((nom_aula | num_aula), grup*, informatica?, (projector | pantalla), aforo, radiadors?)>
+<!ELEMENT nom_aula (#PCDATA)>
+<!ELEMENT num_aula (#PCDATA)>
+<!ELEMENT grup (#PCDATA)>
+<!ELEMENT informatica EMPTY>
+<!ELEMENT projector (#PCDATA)>
+<!ELEMENT pantalla (#PCDATA)>
+<!ELEMENT aforo (#PCDATA)>
+<!ELEMENT radiadors (#PCDATA)>

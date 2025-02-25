@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "nom_aula": {
+      "type": "string"
+    },
+    "num_aula": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 999
+    },
+    "pis": {
+      "type": "integer",
+      "minimum": -1,
+      "maximum": 10
+    },
+    "grups": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "maxItems": 20
+    },
+    "informatica": {
+      "type": "boolean"
+    },
+    "projector": {
+      "type": "string"
+    },
+    "pantalla": {
+      "type": "string",
+      "enum": [
+        "Newline Lyra Q23",
+        "Synetech Taurus"
+      ]
+    },
+    "aforo": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "radiadors": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    }
+  },
+  "required": [
+    "nom_aula",
+    "pis",
+    "aforo"
+  ],
+  "additionalProperties": false
+}

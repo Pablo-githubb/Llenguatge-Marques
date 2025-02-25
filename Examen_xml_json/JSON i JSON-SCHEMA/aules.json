@@ -1,0 +1,9 @@
+{
+  "nom_aula":"20.3",
+  "pis":2,
+  "grups":["ASIX1A","ASIX1B,ASIX2"],
+  "informatica":true,
+  "pantalla":"Newline Lyra Q23",
+  "aforo":1,
+  "radiadors":2
+}
