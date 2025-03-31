@@ -30,13 +30,13 @@
                 <xs:element name="num_aula" type="xs:integer" minOccurs="1" maxOccurs="999"/>
             </xs:choice>
             <xs:element name="grup" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="informatica" type="xs:string" minOccurs="0"/>
+            <xs:element name="informatica" type="complexType" minOccurs="0"/>
             <xs:choice>
                 <xs:element name="projector" type="xs:string"/>
                 <xs:element name="pantalla" type="PantallaType"/>
             </xs:choice>
             <xs:element name="aforo" type="xs:integer" minOccurs="1" maxOccurs="100"/>
-            <xs:element name="radiadors" type="xs:integer" minOccurs="1" maxOccurs="100"/>
+            <xs:element name="radiadors" type="xs:integer" minOccurs="1" maxOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 

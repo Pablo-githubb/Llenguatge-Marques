@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: yellow;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    color: darkblue;
+    text-align: left;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.day-title {
+    color: red;
+}
+
+.variable-title {
+    color: black;
+    font-weight: bold;
+}
+
+.variable-value {
+    color: green;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.loading {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+}
