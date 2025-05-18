@@ -6,9 +6,33 @@
    <meta name="description" content="Página oficial de XICLEROSFC, descubre contenido exclusivo, vídeos y comentarios.">
    <title>XICLEROSFC</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"> 
    
+   <script>
+     // JavaScript en el head
+     function validarContrasenya() {
+       const password1 = document.getElementById('password1').value;
+       const password2 = document.getElementById('password2').value;
+       
+       if (password1 !== password2) {
+          alert('Les dues contrasenyes no son iguals!');
+          return false; 
+       }
+       
+       if (password1.length < 8) {
+          alert('La contrasenya ha de tindre un mínim de 8 caràcters.');
+          return false; 
+       }
+       
+       document.getElementById('passwordResult').style.display = 'block';
+       return false; // Evita el envío del formulario
+     }
+   </script>
+</head>
+
+<body>
+   <!-- Formulario de contraseña (movido del head al body) -->
    <form id="formPassword" onsubmit="return validarContrasenya()">
       <label for="password1">Contrasenya:</label>
       <input type="password" id="password1" name="password1" required>
@@ -17,15 +41,13 @@
       <input type="password" id="password2" name="password2" required>
       
       <button type="submit">Enviar</button>
+      <div id="passwordResult" style="display:none">La contrasenya s'ha canviat correctament</div>
    </form>   
 
-</head>
-
-<body>
    <!-- Navigation Bar -->
    <nav class="navbar container">
       <a href="#" class="brandlogo">
-         <img src="img/xicleros1png.png" alt="Logo de XICLEROSFC">
+         <img src="img/xicleros1.png" alt="Logo de XICLEROSFC">
       </a>
       <div class="burger" id="burger">
          <span class="burger-line"></span>
@@ -72,7 +94,8 @@
          </div>
       </section>  
    </main>
-     <!-- Scripts -->
-   <script src="js/script56.js"></script>
+   
+   <!-- Scripts -->
+   <script src="js/script.js"></script>
 </body>
 </html>

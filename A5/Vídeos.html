@@ -1,93 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Colección de videos de DJPUYA y BLAS.">
-    <link rel="stylesheet" href="videos.css">
-    <title>Obres Teatrals</title>
-</head>
+    <meta name="description" content="Videos de XICLEROSFC, descubre vídeos exclusivos y divertidos.">
+    <title>Vídeos - XICLEROSFC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/videos.css">
+    <style>
+        /* Estilo para la galería */
+        #galeria {
+            margin: 20px auto;
+            text-align: center;
+        }
 
-<body id="fondo">
+        .thumbnails {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .thumb {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid #e56d09;
+            border-radius: 5px;
+        }
+
+        #imatgeGran {
+            display: none;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        #gran {
+            width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            border: 3px solid #e56d09;
+            border-radius: 10px;
+        }
+        
+        /* Estilo para el reloj */
+        #rellotge {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e56d09;
+            text-align: center;
+            margin: 10px 0;
+            padding: 5px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="brandlogo">
-                <img src="img/xicleros1png.png" alt="Logo Xicleros">
+                <img src="img/xicleros1.png" alt="Logo Xicleros">
             </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="index.html" class="menu-link">Página de inicio</a></li>
+                    <li class="menu-item"><a href="Vídeos.html" class="menu-link">Vídeos</a></li>
+                    <li class="menu-item"><a href="Comentaris.html" class="menu-link">Comentarios</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="rellotge">0:00</div>
+        <div id="rellotge">0:00</div>
     </header>
-
+    
     <main>
-        <!-- Sección DJPUYA -->
-        <section class="videos-section videospuya">
-            <h1>DJPUYA Session</h1>
-            <article>
-                <h2>VOL.2</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6uUSw1plxFo?si=pYnKoisq9__uEPss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
-            <article>
-                <h2>VOL.1</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4l3l5pu26gc?si=77tgjaCCsF7H9-Ea" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
-            <article>
-                <h2>Open Show - *Sola Remix*</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qBv6J1V6rhE?si=hgG3ju2RYoSGUQle" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
+        <h1>Videos de XICLEROSFC</h1>
+        
+        <section class="video-player">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d_h74uf3Hus?si=mlJk_XuaC3apJGzp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="video-info">
+                <h2>BLASGOTHAM</h2>
+                <p>La canción trap más popular de mi canal favorita mía.</p>
+                <audio controls>
+                    <source src="audio/BLASGOTHAMaudio.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
         </section>
+        
+        <section id="galeria">
+            <h2>Galeria d'imatges</h2>
+            <div class="thumbnails">
+                <img src="img/blas.jpg" alt="Thumbnail 1" class="thumb" onclick="mostrarImatge('img/blas.jpg')">
+                <img src="img/bob.jpg" alt="Thumbnail 2" class="thumb" onclick="mostrarImatge('img/bob.jpg')">
+                <img src="img/borja.jpg" alt="Thumbnail 3" class="thumb" onclick="mostrarImatge('img/borja.jpg')">
+                <img src="img/ericon.jpg" alt="Thumbnail 4" class="thumb" onclick="mostrarImatge('img/ericon.jpg')">
+                <img src="img/voro.jpg" alt="Thumbnail 5" class="thumb" onclick="mostrarImatge('img/voro.jpg')">
+                <img src="img/jus.jpg" alt="Thumbnail 6" class="thumb" onclick="mostrarImatge('img/jus.jpg')">
+                <img src="img/puya.jpg" alt="Thumbnail 7" class="thumb" onclick="mostrarImatge('img/puya.jpg')">
 
-        <!-- Sección BLAS -->
-        <section class="videos-section videosblas">
-            <h1>BLAS - Videos Oficiales</h1>
-            <article>
-                <h2>PARY</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ACSv1rbOBCQ?si=5eDwDNOYBR-ZizzL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
-            <article>
-                <h2>AGRESSIVE</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BcC8DiYJryw?si=4o5szeFwmdTR3DrO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
-            <article>
-                <h2>Mil Maneras</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/H_KGiBgrFe4?si=0ax_F41HuZZU_3_C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
-            <article>
-                <h2>Ángel Celestial</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/u1v0tyg-87U?si=JgWr2Qrytq5rOg41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
-            <article>
-                <h2>GOTHAM (ft. Blixt)</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MLm2xR1kl70?si=o8Pn9BFpq5B74U1W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
-            <article>
-                <h2>Anubis</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9HXQAdW886s?si=JxQMMJQLdW30_LBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
-            <article>
-              <h2>BLAS FT. SU-SU-LEI, ELDEMONIOBENDECIDO999 - MEMORY (Videoclip Oficial)</h2>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/NhKs8asajR8?si=_Orocitho6eXppv9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </article>
+            </div>
+            <div id="imatgeGran">
+                <img id="gran" src="" alt="Imagen grande">
+            </div>
         </section>
     </main>
-    <section id="galeria">
-        <div class="thumbnails">
-           <img src="img/blas.jpg" alt="Petita imatge 1" class="thumb" onclick="mostrarImatge('img/blas.jpg')">
-           <img src="img/BORJA.jpg" alt="Petita imatge 2" class="thumb" onclick="mostrarImatge('img/BORJA.jpg')">
-           <img src="img/puya.jpg" alt="Petita imatge 3" class="thumb" onclick="mostrarImatge('img/puya.jpg')">
-           <img src="img/ericon.jpg" alt="Petita imatge 1" class="thumb" onclick="mostrarImatge('img/ericon.jpg')">
-           <img src="img/jus.jpg" alt="Petita imatge 1" class="thumb" onclick="mostrarImatge('img/jus.jpg')">
-           <img src="img/voro.jpg" alt="Petita imatge 1" class="thumb" onclick="mostrarImatge('img/voro.jpg')">
+    
+    <footer>
+        <p>&copy; 2025 XICLEROSFC. Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- Scripts -->
+    <script>
+        // JavaScript interno para la galería
+        function mostrarImatge(imatgeGran) {
+            document.getElementById('gran').src = imatgeGran;
+            document.getElementById('imatgeGran').style.display = 'block'; 
+        }
+    </script>
+    
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Script del reloj - Corregido para iniciar inmediatamente
+        let temps = 0;
+        const rellotgeElement = document.getElementById('rellotge');
 
+        function actualitzarRellotge() {
+            temps++;
+            const minuts = Math.floor(temps / 60);
+            const segons = temps % 60;
+            rellotgeElement.textContent = `${minuts}:${segons < 10 ? '0' + segons : segons}`;
+        }
 
-           <!-- Afegeix més petites imatges si cal -->
-        </div>
-        <div id="imatgeGran">
-           <img id="gran" src="img/djpuya.png" alt="Imatge gran">
-        </div>
-     </section>
-     
-     </section>
-<script src="js/script56.js"></script>
+        // Iniciar el reloj inmediatamente y luego cada segundo
+        actualitzarRellotge(); // Ejecuta inmediatamente para mostrar 0:01
+        setInterval(actualitzarRellotge, 1000);
+        
+        // Controlar el menú hamburguesa
+        document.addEventListener("DOMContentLoaded", function() {
+            const burger = document.getElementById('burger');
+            const menu = document.getElementById('menu');
+            
+            if (burger && menu) {
+                burger.addEventListener('click', function() {
+                    this.classList.toggle('is-active');
+                    menu.classList.toggle('is-active');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
