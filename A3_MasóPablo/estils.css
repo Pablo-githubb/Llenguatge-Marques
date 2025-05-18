@@ -27,14 +27,14 @@
 }
 .logo{
     text-align: center;
-    scale: 2000px;
+    /* Eliminada la propietat scale incorrecta */
     background-color: #535353;
 }
 #facebook{
-scale: 10px;
+    transform: scale(0.8); /* Corregida la propietat scale */
 }
 #twitter{
-scale: 10px;
+    transform: scale(0.8); /* Corregida la propietat scale */
 }
 .links{
     background-color: #535353;
@@ -65,7 +65,7 @@ scale: 10px;
 .img1{
     position: relative;
     text-align: center;
-    scale: 90%;
+    transform: scale(0.9); /* Corregida la propietat scale */
 }
 .footer{
     text-align: center;
@@ -142,21 +142,21 @@ html{
     font-family: 'Times New Roman', Times, serif;
     margin: auto;
     padding: auto;
-    
+    color: orange; /* Combinades les dues propietats del selector duplicat */
 }
-#subrallat{
-    color: orange;
+#subrallat a{
+    color: orange; /* Afegida la definició per l'enllaç */
+    text-decoration: none;
 }
 #subrallat a:hover{
     color: white;
-    
 }
 #subrallat2{
     color: orange;
+    text-decoration: none;
 }
-#subrallat2 a:hover{
+#subrallat2:hover{
     color: white;
-    
 }
 .personatges{
     font-family: 'Times New Roman', Times, serif;
